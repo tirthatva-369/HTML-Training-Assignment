@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Analysis</title>
+    <link
+      rel="stylesheet"
+      href="D:\Project\HTML Training Assignment\css\bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="D:\Project\HTML Training Assignment\css\style.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <a class="navbar-brand" href="#">
+            <img
+              class="menu"
+              src="D:\Project\HTML Training Assignment\images\menu-bar.svg"
+              alt="Hamburger Menu"
+            />
+          </a>
+
+          <a
+            class="navbar-brand"
+            href="D:\Project\HTML Training Assignment\index.html"
+          >
+            <img
+              class="logo"
+              src="images\logo.svg"
+              alt="Company Logo"
+              height="30"
+              width="142"
+            />
+          </a>
+
+          <form class="d-flex">
+            <button class="search btn btn-outline-secondary me-2" type="button">
+              <img
+                src="D:\Project\HTML Training Assignment\images\search-icon.svg"
+                alt="Search Icon"
+                height="25.59px"
+                width="25.59px"
+              />
+            </button>
+
+            <input
+              class="search-bar form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="noti nav-link" href="#">
+                <img
+                  src="D:\Project\HTML Training Assignment\images\notification-icon.svg"
+                  alt="Notification Icon"
+                />
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <img
+                src="D:\Project\HTML Training Assignment\images\profile.png"
+                alt="Profile Picture"
+                class="rounded-circle me-2"
+              />
+              <label class="nav-username">John Doe</label>
+              <img
+                src="D:\Project\HTML Training Assignment\images\downward-arrow.svg"
+                alt="Dropdown Arrow"
+                class="ms-2"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar Starts -->
+        <div class="col-2">
+          <ul class="components">
+            <a href="D:\Project\HTML Training Assignment\dashboard.html">
+              <li class="sidelist">
+                <img
+                  class="sideicon"
+                  src="D:\Project\HTML Training Assignment\images\dashboard-default.svg"
+                  height="25px"
+                  width="25px"
+                />
+                <span class="sidetext">Dashboard</span>
+              </li>
+            </a>
+            <a href="D:\Project\HTML Training Assignment\innerpage.html">
+              <li class="sidelist">
+                <img
+                  class="sideicon"
+                  src="D:\Project\HTML Training Assignment\images\graph-default.svg"
+                  height="25px"
+                  width="25px"
+                />
+                <span class="sidetext">Analysis</span>
+              </li>
+            </a>
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="images/inbox-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">Inbox</span>
+            </li>
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="D:\Project\HTML Training Assignment\images\clock-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">History</span>
+            </li>
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="D:\Project\HTML Training Assignment\images\user-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">Users</span>
+            </li>
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="D:\Project\HTML Training Assignment\images\maintenance-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">Maintanance</span>
+            </li>
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="D:\Project\HTML Training Assignment\images\setting-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">Settings</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-10 work-area">
+          <div class="container m-0">
+            <h2 class="work-area-header m-3">Analysis</h2>
+          </div>
+          <div class="analysis-form container m-5">
+            <div class="section-title">One Column</div>
+
+            <div class="container">
+              <div class="input-block">
+                <input
+                  type="text"
+                  name="input-text"
+                  id="input-text"
+                  required
+                  spellcheck="false"
+                />
+                <span class="placeholder">Name</span>
+              </div>
+
+              <div class="dropdown-block">
+                <select name="dropdown-select" id="dropdown-select" required>
+                  <option value="" disabled selected hidden>Dropdown</option>
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                </select>
+                <span class="arrow">
+                  <img
+                    src="D:\Project\HTML Training Assignment\images\downward-arrow.svg"
+                    style="margin-top: 25px"
+                    alt=""
+                  />
+                </span>
+              </div>
+              <div class="textarea-block">
+                <textarea
+                  name="textarea-text"
+                  id="textarea-text"
+                  required
+                  spellcheck="false"
+                  rows="4"
+                ></textarea>
+                <span class="placeholder"> Multiple line </span>
+              </div>
+
+              <div class="section-title" style="padding-left: unset">
+                Two Column
+              </div>
+              <div class="row row-cols-2">
+                <div class="col">
+                  <div class="input-block">
+                    <input
+                      type="text"
+                      name="input-text"
+                      id="input-text"
+                      required
+                      spellcheck="false"
+                    />
+                    <span class="placeholder">Name</span>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="input-block">
+                    <input
+                      type="text"
+                      name="input-text"
+                      id="input-text"
+                      required
+                      spellcheck="false"
+                    />
+                    <span class="placeholder">Username</span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="input-block" style="margin-top: 20px; height: fit-content;">
+                    <input
+                      type="password"
+                      name="input-password"
+                      id="input-password"
+                      required
+                      spellcheck="false"
+                    />
+                    <span class="placeholder"> Password </span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="dropdown-block">
+                    <select
+                      name="dropdown-select"
+                      id="dropdown-select"
+                      required
+                    >
+                      <option value="" disabled selected hidden>
+                        Dropdown
+                      </option>
+                      <option value="option1">Option 1</option>
+                      <option value="option2">Option 2</option>
+                      <option value="option3">Option 3</option>
+                    </select>
+                    <span class="arrow">
+                      <img
+                        src="D:\Project\HTML Training Assignment\images\downward-arrow.svg"
+                        style="margin-top: 25px"
+                        alt=""
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

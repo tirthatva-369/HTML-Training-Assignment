@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="D:\Project\HTML Training Assignment\css\bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="D:\Project\HTML Training Assignment\css\style.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <a class="navbar-brand" href="#">
+            <img
+              class="menu"
+              src="D:\Project\HTML Training Assignment\images\menu-bar.svg"
+              alt="Hamburger Menu"
+            />
+          </a>
+
+          <a class="navbar-brand" href="D:\Project\HTML Training Assignment\index.html">
+            <img
+              class="logo"
+              src="images\logo.svg"
+              alt="Company Logo"
+              height="30"
+              width="142"
+            />
+          </a>
+
+          <form class="d-flex">
+            <button class="search btn btn-outline-secondary me-2" type="button">
+              <img
+                src="D:\Project\HTML Training Assignment\images\search-icon.svg"
+                alt="Search Icon"
+                height="25.59px"
+                width="25.59px"
+              />
+            </button>
+
+            <input
+              class="search-bar form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="noti nav-link" href="#">
+                <img
+                  src="D:\Project\HTML Training Assignment\images\notification-icon.svg"
+                  alt="Notification Icon"
+                />
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <img
+                src="D:\Project\HTML Training Assignment\images\profile.png"
+                alt="Profile Picture"
+                class="rounded-circle me-2"
+              />
+              <label class="nav-username">John Doe</label>
+              <img
+                src="D:\Project\HTML Training Assignment\images\downward-arrow.svg"
+                alt="Dropdown Arrow"
+                class="ms-2"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar Starts -->
+        <div class="col-2">
+          <ul class="components">
+            <a href="D:\Project\HTML Training Assignment\dashboard.html">
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="D:\Project\HTML Training Assignment\images\dashboard-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">Dashboard</span>
+            </li>
+          </a>
+          <a href="D:\Project\HTML Training Assignment\innerpage.html">
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="D:\Project\HTML Training Assignment\images\graph-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">Analysis</span>
+            </li>
+          </a>
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="images/inbox-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">Inbox</span>
+            </li>
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="D:\Project\HTML Training Assignment\images\clock-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">History</span>
+            </li>
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="D:\Project\HTML Training Assignment\images\user-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">Users</span>
+            </li>
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="D:\Project\HTML Training Assignment\images\maintenance-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">Maintanance</span>
+            </li>
+            <li class="sidelist">
+              <img
+                class="sideicon"
+                src="D:\Project\HTML Training Assignment\images\setting-default.svg"
+                height="25px"
+                width="25px"
+              />
+              <span class="sidetext">Settings</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Dashboard Starts -->
+        <div class="col-10 work-area">
+          <div class="container m-0">
+            <h2 class="work-area-header m-3">Dashboard</h2>
+
+            <!-- 5 Boxes -->
+            <div class="row row-cols-5">
+              <div class="col-5 bg-white stats-on-glance">
+                <div class="row">
+                  <div class="col icon-in-square">
+                    <img
+                      src="D:\Project\HTML Training Assignment\images\star.svg"
+                    />
+                  </div>
+                  <div class="col-7">
+                    <div class="row row-cols-1">
+                      <div class="col p-0 stat-count">23,456</div>
+                      <div class="col mt-1 p-0 stat-title">New Products</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-5 bg-white stats-on-glance">
+                <div class="row">
+                  <div class="col icon-in-square">
+                    <img
+                      src="D:\Project\HTML Training Assignment\images\new-product.svg"
+                    />
+                  </div>
+                  <div class="col-7">
+                    <div class="row row-cols-1">
+                      <div class="col p-0 stat-count">2345</div>
+                      <div class="col mt-1 p-0 stat-title">Added Products</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-5 bg-white stats-on-glance">
+                <div class="row">
+                  <div class="col icon-in-square">
+                    <img
+                      src="D:\Project\HTML Training Assignment\images\total-product.svg"
+                      style="margin-top: -5px"
+                    />
+                  </div>
+                  <div class="col-7">
+                    <div class="row row-cols-1">
+                      <div class="col p-0 stat-count">32,456</div>
+                      <div class="col mt-1 p-0 stat-title">Total Products</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-5 bg-white stats-on-glance">
+                <div class="row">
+                  <div class="col icon-in-square">
+                    <img
+                      src="D:\Project\HTML Training Assignment\images\dollar-filled.svg"
+                    />
+                  </div>
+                  <div class="col-7">
+                    <div class="row row-cols-1">
+                      <div class="col p-0 stat-count">5678</div>
+                      <div class="col mt-1 p-0 stat-title">Today's Sale</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-5 bg-white stats-on-glance">
+                <div class="row">
+                  <div class="col icon-in-square">
+                    <img
+                      src="D:\Project\HTML Training Assignment\images\money-bag.svg"
+                    />
+                  </div>
+                  <div class="col-7">
+                    <div class="row row-cols-1">
+                      <div class="col p-0 stat-count">33,5342</div>
+                      <div class="col mt-1 p-0 stat-title">Total Sale</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Graph and Pie Chart -->
+            <div class="container mt-5">
+              <div class="row row-cols-2">
+                <div class="col-8 bg-white graph">
+                  <div class="row row-cols-2">
+                    <h2 class="col sale-header">Sale</h2>
+                    <div class="col time-headers">
+                      <span class="weekly-monthly"> Weekly </span>
+                      <span class="weekly-monthly"> Monthly </span>
+                      <span class="yearly"> Yearly </span>
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                  <img
+                    src="D:\Project\HTML Training Assignment\images\data-graph.png"
+                    style="margin: 35px 40px 30px 30px"
+                  />
+                </div>
+
+                <div class="col-4 bg-white pie-chart">
+                  <div class="row">
+                    <h2 class="col sale-header">Sales by Country</h2>
+                  </div>
+                  <div class="row">
+                    <img
+                      class="pie-image"
+                      src="D:\Project\HTML Training Assignment\images\pie-chart.svg"
+                      height="250"
+                      width="250"
+                    />
+                  </div>
+                  <div class="row row-cols-2">
+                    <div class="col USA"></div>
+                    <div class="col country-names">United States of America</div>
+                    <div class="col Canada"></div>
+                    <div class="col country-names">Canada</div>
+                    </div>
+                    <div class="row row-cols-2">
+                    <div class="col Russia"></div>
+                    <div class="col country-names">Russia</div>
+                    <div class="col India"></div>
+                    <div class="col country-names">India</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Invoices Starts -->
+            <div class="container bg-white">
+              <div class="row row-cols-2">
+                <h2 class="col mr-0 mt-2 invoice-header">Invoices</h2>
+
+                <div class="col mini-heading">View All</div>
+              </div>
+              <div class="table-responsive-sm">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="table-head">INVOICE</th>
+                      <th scope="col" class="table-head">COMPANY NAME</th>
+                      <th scope="col" class="table-head">EMAIL</th>
+                      <th scope="col" class="table-head">DUE DATE</th>
+                      <th scope="col" class="table-head">STATUS</th>
+                      <th scope="col" class="table-head">AMOUNT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="table-row">651535</td>
+                      <td class="table-row">Public Adjusting Firm</td>
+                      <td class="table-row">georgia.young@example.com</td>
+                      <td class="table-row">24 May, 2020</td>
+                      <td class="table-row">Paid</td>
+                      <td class="table-row">$47,500</td>
+                    </tr>
+                    <tr>
+                      <td class="table-row">651536</td>
+                      <td class="table-row">Web Design Studio</td>
+                      <td class="table-row">james.smith@example.com</td>
+                      <td class="table-row">30 May, 2020</td>
+                      <td class="table-row">Pending</td>
+                      <td class="table-row">$12,000</td>
+                    </tr>
+                    <tr>
+                      <td class="table-row">651537</td>
+                      <td class="table-row">Fitness Center</td>
+                      <td class="table-row">lisa.jones@example.com</td>
+                      <td class="table-row">15 June, 2020</td>
+                      <td class="table-row">Failed</td>
+                      <td class="table-row">$8,500</td>
+                    </tr>
+                    <tr>
+                      <td class="table-row">651538</td>
+                      <td class="table-row">Coffee Shop</td>
+                      <td class="table-row">david.lee@example.com</td>
+                      <td class="table-row">20 June, 2020</td>
+                      <td class="table-row">Paid</td>
+                      <td class="table-row">$5,000</td>
+                    </tr>
+                    <tr>
+                      <td class="table-row">651539</td>
+                      <td class="table-row">Flower Shop</td>
+                      <td class="table-row">emma.wilson@example.com</td>
+                      <td class="table-row">25 June, 2020</td>
+                      <td class="table-row">Pending</td>
+                      <td class="table-row">$3,000</td>
+                    </tr>
+                    <tr>
+                      <td class="table-row">651540</td>
+                      <td class="table-row">Book Store</td>
+                      <td class="table-row">noah.brown@example.com</td>
+                      <td class="table-row">30 June, 2020</td>
+                      <td class="table-row">Failed</td>
+                      <td class="table-row">$10,000</td>
+                    </tr>
+                    <tr>
+                      <td class="table-row">651541</td>
+                      <td class="table-row">Pet Store</td>
+                      <td class="table-row">olivia.miller@example.com</td>
+                      <td class="table-row">5 July, 2020</td>
+                      <td class="table-row">Paid</td>
+                      <td class="table-row">$7,500</td>
+                    </tr>
+                    <tr>
+                      <td class="table-row">651542</td>
+                      <td class="table-row">Bakery</td>
+                      <td class="table-row">liam.davis@example.com</td>
+                      <td class="table-row">10 July, 2020</td>
+                      <td class="table-row">Pending</td>
+                      <td class="table-row">$4,000</td>
+                    </tr>
+                    <tr>
+                      <td class="table-row">651543</td>
+                      <td class="table-row">Salon</td>
+                      <td class="table-row">sophia.garcia@example.com</td>
+                      <td class="table-row">15 July, 2020</td>
+                      <td class="table-row">Failed</td>
+                      <td class="table-row">$6,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
